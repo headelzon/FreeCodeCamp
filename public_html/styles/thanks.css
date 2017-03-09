@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url(../images/trump-gold.jpg);
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 10em !important;
+    padding-top: 2em;
+}

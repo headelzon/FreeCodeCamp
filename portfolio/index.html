@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WK</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About me <span class="sr-only">(current)</span></a></li>
+            <li id="scroll"><a href="#">Portfolio</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/headelzon"><img src="http://itnotes.me/images/gitHub-logo.png">  GitHub</a></li>
+                <li><a href="http://codepen.io/headelzon/"><img src="http://static.wixstatic.com/media/cc0d19_e8102fb6000b422aa52b209a12e441fc~mv2.png">  CodePen</a></li>
+                <li><a href="#"><img id="email-icon" src="https://image.flaticon.com/icons/png/512/34/34227.png">  LinkedIn</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><img id="email-icon" src="http://www.iconskid.com/images/0/email-icon-vector-new-text-amp-notifier-73.png">  Email</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="email-form" id="email-modal">Email form</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="get" id="form1">
+                        <div class="form-group">
+                            <label for="sender" class="control-label">Your name:</label>
+                            <input type="text" class="form-control" id="sender-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Your email:</label>
+                            <input type="email" class="form-control" id="sender-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" form="form1" value="Submit" class="btn btn-primary">Send</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-12 outer-left">
+            <div class="intro">
+                <p>Hello, World!</p>
+                <p>Something about this page.</p>
+            </div>
+        </div>  
+        <div class="col-md-4 col-sm-8 col-xs-12 outer-right">
+            <div class="about-me" id="about-me">
+                <img src="http://www.apparteducation.com/wp-content/uploads/2016/08/avatarDefault.png" alt="avatar">
+                <h3>Wiktor Koziak</h3>
+                <p><em>Mechatronic Engineering Student at AGH UST</em></p>
+                <p id="techs">front end  <i class="fa fa-code" aria-hidden="true"></i>  python  <i class="fa fa-code" aria-hidden="true"></i>  C++</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- PORTFOLIO -->
+    <div class="portfolio" id="portfolio">
+        <hr>
+        <h2>My portfolio</h2>
+        <p><em>Visit the websites by clicking on the images</em></p>
+        <div class="row container-fluid">
+            <div class="col-xs-12 col-md-4 thumbnail">
+                <div class="thumbnail-content">
+                    <div class="portfolio-screen"> <!-- replace with image -->
+                    </div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 thumbnail">
+                <div class="thumbnail-content">
+                    <div class="portfolio-screen"> <!-- replace with image -->
+                    </div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 thumbnail">
+                <div class="thumbnail-content">
+                    <div class="portfolio-screen"> <!-- replace with image -->
+                    </div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="row container-fluid" id="portfolio-second-row">
+            <div class="col-xs-12 col-md-4 thumbnail">
+                <div class="thumbnail-content">
+                    <div class="portfolio-screen"> <!-- replace with image -->
+                    </div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 thumbnail">
+                <div class="thumbnail-content">
+                    <div class="portfolio-screen"> <!-- replace with image -->
+                    </div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 thumbnail">
+                <div class="thumbnail-content">
+                    <div class="portfolio-screen"> <!-- replace with image -->
+                    </div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <footer class="footer">
+        <div class="row container-fluid">
+            <div class="col-md-6 col-xs-6 copyright">
+                <p class="text-muted">Copyright &copy; 2017 headelzon. All rights reversed.</p>
+            </div>
+            <div class="col-md-6 col-xs-6 icons">
+                <a href="#"><img src="http://www.iconsdb.com/icons/preview/dark-gray/facebook-3-xxl.png" alt="facebook"></a>
+                <a href="#"><img src="http://www.iconsdb.com/icons/download/gray/twitter-512.png" alt="twitter"></a>
+                <a href="#"><img src="http://www.iconsdb.com/icons/preview/dark-gray/instagram-6-xxl.png" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+<script src="/bootstrap-toolkit.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

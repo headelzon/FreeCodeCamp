@@ -1,0 +1,99 @@
+body {
+    background-color: #000000;	
+    color: white;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+  margin: 20px;
+  border-radius: 10px;
+	color: black;
+}
+
+.heading {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size:  4em;
+}
+
+.thumbnail img {
+  width: 95%;
+  border-radius: 5%;
+  margin: 0.5em auto;
+}
+
+.heading .thumbnail {
+  margin: 0 auto 2em;
+}
+
+.bio {
+	background-color: #ffffff;
+	margin: 20px;
+	border-radius: 1em;
+	color: black;
+	text-align: center;
+	padding: 2em;
+}
+
+.well {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    box-shadow: inset 0 0 10px grey;
+    padding: 20px 30px 20px 20px;
+    width: 70%;
+    margin: 0 auto 1em auto;
+    text-align: justify;
+}
+
+.well li{
+	margin-bottom: 0.7em;
+}
+
+.thumbnails {
+  margin: 1em auto;
+    padding: 2em;
+  text-align: center;
+    width: 100%;
+}
+
+.thumbnails h2 {
+	margin-bottom: 1em;
+}
+
+.thumbnails .thumbnail {
+  margin: 0 auto 2em;
+	position: relative;
+	min-height: 33em;
+    text-align: center;
+}
+
+.thumbnails img {
+  width: 90%;
+  border-radius: 1%;
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+}
+
+.thumbnails .btn {
+	background-color: #8e0101;
+	border-color: #8e0101
+}
+
+.thumbnails .btn:hover {
+	background-color: #a80101;
+}
+
+.year {
+	font-size: 0.9em;
+}
+
+.caption {
+	position: absolute;
+	bottom: 0;
+}
