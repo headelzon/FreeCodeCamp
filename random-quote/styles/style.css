@@ -1,0 +1,74 @@
+html {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url(../images/fog_wave-wallpaper-7680x4800.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+}
+
+.quote-area {
+	font-family: serif;
+	color: white;
+	width: 80vw;
+	margin: 40vh auto 0 auto;
+	padding-top: 0.5em;
+/*
+	border-top: groove 1px rgba(225,225,225,0.3);
+	border-bottom: groove 1px rgba(225,225,225,0.3);
+*/
+	background-color: rgba(0,0,0,0.2);
+}
+
+.quote {
+	font-size: 2em;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.author {
+	font-size: 1em;
+	font-family: 'Arapey', serif;
+}
+
+.buttons {
+	margin-top: 5vh;
+}
+
+button {
+	border-radius: 0;
+	width: 8em;
+	height: 3em;
+	background-color: rgba(0,0,0,0.6);
+	border: none;
+	color: white;
+	transition-duration: 0.3s;
+
+}
+
+button:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	margin-left: 1em;
+	margin-bottom: 0;
+	font-family: sans-serif;
+}
+
+.text-muted {
+	color: rgba(225,225,225,0.3);
+}
+
+.footer a {
+	color: rgba(225,225,225,0.3);
+}

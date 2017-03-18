@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -68,6 +68,10 @@
                             <input type="email" class="form-control" id="sender-email">
                         </div>
                         <div class="form-group">
+                            <label for="subject" class="control-label">Subject:</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="form-group">
                             <label for="message-text" class="control-label">Message:</label>
                             <textarea class="form-control" id="message-text"></textarea>
                         </div>
@@ -86,12 +90,13 @@
         <div class="container-fluid">
         <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-12 outer-left">
-            <div class="intro">
-                <p>Hello, World!</p>
-                <p>Something about this page.</p>
+            <div class="intro" id="intro">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
             </div>
         </div>  
-        <div class="col-md-4 col-sm-8 col-xs-12 outer-right">
+        <div class="col-md-4 col-sm-4 col-xs-12 outer-right">
             <div class="about-me" id="about-me">
                 <img src="http://www.apparteducation.com/wp-content/uploads/2016/08/avatarDefault.png" alt="avatar">
                 <h3>Wiktor Koziak</h3>
@@ -162,19 +167,20 @@
         </div>
         <hr>
     </div>
+    
     <footer class="footer">
         <div class="row container-fluid">
             <div class="col-md-6 col-xs-6 copyright">
                 <p class="text-muted">Copyright &copy; 2017 headelzon. All rights reversed.</p>
             </div>
             <div class="col-md-6 col-xs-6 icons">
-                <a href="#"><img src="http://www.iconsdb.com/icons/preview/dark-gray/facebook-3-xxl.png" alt="facebook"></a>
-                <a href="#"><img src="http://www.iconsdb.com/icons/download/gray/twitter-512.png" alt="twitter"></a>
-                <a href="#"><img src="http://www.iconsdb.com/icons/preview/dark-gray/instagram-6-xxl.png" alt="instagram"></a>
+                <a href="#"><img src="./images/facebook-512.png" alt="facebook"></a>
+                <a href="#"><img src="./images/twitter-512.png" alt="twitter"></a>
+                <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
             </div>
         </div>
     </footer>
-<script src="/bootstrap-toolkit.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script src="js/bootstrap-toolkit.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

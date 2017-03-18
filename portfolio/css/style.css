@@ -14,10 +14,14 @@ body {
     height: 0.7em;
 }
 
+.general {
+    padding: 0;
+}
+
 .navbar {
     /*margin: 0 1em;*/
     border-radius: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .nav li {
@@ -40,19 +44,19 @@ body {
 
 .intro {
     min-height: 350px;
-    padding: 2em;
     margin: 0;
     border-radius: 1em;
     background-color: rgb(248,248,248);
+    padding: 1em;
 }
 
 .about-me {
-    min-height: 350px;
-    padding: 2em;
+/*    min-height: 350px;*/
     margin: 0;
     border-radius: 1em;
     background-color: rgb(248,248,248);
     text-align: center;
+    padding: 1em;
 }
 
 .about-me img {
@@ -64,11 +68,13 @@ body {
 }
 
 .outer-left {
-    padding: 1em 0.5em 1em 0;
+    margin: 1em 0;
+    padding: 0 0.5em 1em 0;
 }
 
 .outer-right {
-    padding: 1em 0 1em 0.5em;
+    margin: 1em 0;
+    padding: 0 0 1em 0.5em;
 }
 
 .thumbnail {
